@@ -1,41 +1,41 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/bible-wiki/node_modules
-/bible-wiki/.pnp
-/bible-wiki/.pnp.*
-/bible-wiki/.yarn/*
-/bible-wiki/!.yarn/patches
-/bible-wiki/!.yarn/plugins
-/bible-wiki/!.yarn/releases
-/bible-wiki/!.yarn/versions
+node_modules
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # testing
-/bible-wiki//coverage
+/coverage
 
 # next.js
-/bible-wiki/.next/
-/bible-wiki/out/
+.next/
+out/
 
 # production
-/bible-wiki/build
+build
 
 # misc
-/bible-wiki/.DS_Store
-/bible-wiki/*.pem
+.DS_Store
+*.pem
 
 # debug
-/bible-wiki/npm-debug.log*
-/bible-wiki/yarn-debug.log*
-/bible-wiki/yarn-error.log*
-/bible-wiki/.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-/bible-wiki/.env*
+.env*
 
 # vercel
-/bible-wiki/.vercel
+.vercel
 
 # typescript
-/bible-wiki/*.tsbuildinfo
-/bible-wiki/next-env.d.ts
+*.tsbuildinfo
+next-env.d.ts
