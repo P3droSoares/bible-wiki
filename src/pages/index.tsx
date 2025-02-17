@@ -18,7 +18,7 @@ function Home(){
           justifyContent: 'center',
           gap: '0.8rem'
         }}>
-          <img width={32} src="https://images.emojiterra.com/google/android-10/512px/1f4d6.png"/>
+          <img width={32} src="./logo_v1.svg"/>
           <h1 style={{
             margin: 0,
             fontSize: "1.4rem",
