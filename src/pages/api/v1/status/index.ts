@@ -2,20 +2,17 @@ import database from "@/infra/database";
 import { NextApiRequest, NextApiResponse } from "next";
 
 type ResponseData = {
-  message: string
-}
+  message: string;
+};
 
-async function status(
-  req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
-) {
+async function status(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
   const response = await database.query({
-    text: "SELECT 1 + 1;"
-  })
-  
-  console.log(response.rows)
+    text: "SELECT 1 + 1;",
+  });
 
-  return res.status(200).json({message: "Tudo certo!"});
+  console.log(response.rows);
+
+  return res.status(200).json({ message: "Tudo certo!" });
 }
 
-export default status
+export default status;
