@@ -6,13 +6,13 @@ type ResponseData = {
 };
 
 async function status(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
-  const response = await database.query({
-    text: "SELECT 1 + 1;",
-  });
+  // const response = await database.query({
+  //   text: "SELECT 1 + 1;",
+  // });
 
-  console.log(response.rows);
+  // console.log(response.rows);
 
-  return res.status(200).json({ message: "Tudo certo!" });
+  return res.status(200).json({ message: "Que massa!" });
 }
 
 export default status;
