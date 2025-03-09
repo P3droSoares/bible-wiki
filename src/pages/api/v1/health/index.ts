@@ -5,7 +5,7 @@ type ResponseData = {
   message: string;
 };
 
-async function status(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
+async function health(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
   // const response = await database.query({
   //   text: "SELECT 1 + 1;",
   // });
@@ -15,4 +15,4 @@ async function status(req: NextApiRequest, res: NextApiResponse<ResponseData>) {
   return res.status(200).json({ message: "Que massa!" });
 }
 
-export default status;
+export default health;
