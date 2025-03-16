@@ -9,13 +9,12 @@ async function query(queryString: QueryConfig | string) {
     password: process.env.POSTGRES_PASSWORD,
   });
 
-  await client.connect();
-
   try {
+    await client.connect();
     const response = await client.query(queryString);
     return response;
   } catch (error) {
-    throw new Error("Erro ao executar query");
+    throw new Error("Erro ao conectar ao banco de dados ou ao executar query");
   } finally {
     await client.end();
   }
