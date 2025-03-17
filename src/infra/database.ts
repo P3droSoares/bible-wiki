@@ -7,6 +7,7 @@ async function query(queryString: QueryConfig | string) {
     database: process.env.POSTGRES_DB,
     user: process.env.POSTGRES_USER,
     password: process.env.POSTGRES_PASSWORD,
+    ssl: process.env.NODE_ENV ? false : true,
   });
 
   try {
@@ -14,7 +15,8 @@ async function query(queryString: QueryConfig | string) {
     const response = await client.query(queryString);
     return response;
   } catch (error) {
-    throw new Error("Erro ao conectar ao banco de dados ou ao executar query");
+    throw new Error(String(error));
+    // throw new Error("Erro ao conectar ao banco de dados ou ao executar query");
   } finally {
     await client.end();
   }

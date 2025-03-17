@@ -38,9 +38,10 @@ async function getDbHealth(): Promise<DatabaseHealth> {
     .then((result) => parseInt(result.rows[0].max_connections));
 
   const openedConnections = await database
-    .query(
-      "SELECT count(*)::int FROM pg_stat_activity WHERE datname = 'local_db'",
-    )
+    .query({
+      text: "SELECT count(*)::int FROM pg_stat_activity WHERE datname = $1",
+      values: [process.env.POSTGRES_DB],
+    })
     .then((result) => result.rows[0].count);
 
   const dbVersion = await database
