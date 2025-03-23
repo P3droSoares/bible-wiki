@@ -15,7 +15,7 @@ type DatabaseHealth = {
   version: string;
 };
 
-async function health(
+export default async function health(
   req: NextApiRequest,
   res: NextApiResponse<HealthResponse>,
 ) {
@@ -55,5 +55,3 @@ async function getDbHealth(): Promise<DatabaseHealth> {
     version: dbVersion,
   };
 }
-
-export default health;
