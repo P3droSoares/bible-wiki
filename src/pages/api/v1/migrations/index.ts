@@ -6,6 +6,9 @@ export default async function migrations(
   req: NextApiRequest,
   res: NextApiResponse,
 ) {
+  if (process.env.DATABASE_URL == null)
+    throw new Error("Connection string não fornecida ao MigrationRunner")
+
   const migrations = await migrationRunner({
     databaseUrl: process.env.DATABASE_URL,
     dryRun: true,
