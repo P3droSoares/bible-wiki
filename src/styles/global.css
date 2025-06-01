@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: oklch(97.4% 0.0016 71.24);
+  --color-foreground: oklch(33.2% 0.0207 71.24);
+  --color-card: oklch(96.1% 0.0064 71.24);
+  --color-card-foreground: oklch(33.2% 0.0207 71.24);
+  --color-popover: oklch(96.1% 0.0064 71.24);
+  --color-popover-foreground: oklch(33.2% 0.0207 71.24);
+  --color-primary: oklch(71.1% 0.0782 71.24);
+  --color-primary-foreground: oklch(97.4% 0.0016 71.24);
+  --color-secondary: oklch(83.5% 0.0437 71.24);
+  --color-secondary-foreground: oklch(33.2% 0.0207 71.24);
+  --color-muted: oklch(90.1% 0.0233 71.24);
+  --color-muted-foreground: oklch(48.5% 0.0666 71.24);
+  --color-accent: oklch(87% 0.0328 71.24);
+  --color-accent-foreground: oklch(33.2% 0.0207 71.24);
+  --color-destructive: oklch(48.5% 0.0666 71.24);
+  --color-destructive-foreground: oklch(97.4% 0.0016 71.24);
+  --color-border: oklch(93.1% 0.0143 71.24);
+  --color-input: oklch(93.1% 0.0143 71.24);
+  --color-ring: oklch(78.6% 0.0584 71.24);
+  --color-chart-1: oklch(71.1% 0.0782 71.24);
+  --color-chart-2: oklch(83.5% 0.0437 71.24);
+  --color-chart-3: oklch(48.5% 0.0666 71.24);
+  --color-chart-4: oklch(67.4% 0.0782 71.24);
+  --color-chart-5: oklch(33.2% 0.0207 71.24);
+  --color-radius: 0.625rem;
+  --color-sidebar: oklch(96.1% 0.0064 71.24);
+  --color-sidebar-foreground: oklch(33.2% 0.0207 71.24);
+  --color-sidebar-primary: oklch(71.1% 0.0782 71.24);
+  --color-sidebar-primary-foreground: oklch(97.4% 0.0016 71.24);
+  --color-sidebar-accent: oklch(83.5% 0.0437 71.24);
+  --color-sidebar-accent-foreground: oklch(33.2% 0.0207 71.24);
+  --color-sidebar-border: oklch(93.1% 0.0143 71.24);
+  --color-sidebar-ring: oklch(78.6% 0.0584 71.24);
+}
+
+.dark {
+  --background: oklch(33.2% 0.0207 71.24); /* brown-12 */
+  --foreground: oklch(97.4% 0.0016 71.24); /* brown-1 */
+  --card: oklch(33.2% 0.0207 71.24); /* brown-12 */
+  --card-foreground: oklch(97.4% 0.0016 71.24); /* brown-1 */
+  --popover: oklch(33.2% 0.0207 71.24); /* brown-12 */
+  --popover-foreground: oklch(97.4% 0.0016 71.24); /* brown-1 */
+  --primary: oklch(71.1% 0.0782 71.24); /* brown-9 */
+  --primary-foreground: oklch(97.4% 0.0016 71.24); /* brown-1 */
+  --secondary: oklch(48.5% 0.0666 71.24); /* brown-11 */
+  --secondary-foreground: oklch(97.4% 0.0016 71.24); /* brown-1 */
+  --muted: oklch(48.5% 0.0666 71.24); /* brown-11 */
+  --muted-foreground: oklch(90.1% 0.0233 71.24); /* brown-4 */
+  --accent: oklch(67.4% 0.0782 71.24); /* brown-10 */
+  --accent-foreground: oklch(33.2% 0.0207 71.24); /* brown-12 */
+  --destructive: oklch(48.5% 0.0666 71.24);
+  --destructive-foreground: oklch(97.4% 0.0016 71.24);
+  --border: oklch(48.5% 0.0666 71.24);
+  --input: oklch(48.5% 0.0666 71.24);
+  --ring: oklch(71.7% 0.0782 71.24);
+  --chart-1: oklch(71.1% 0.0782 71.24);
+  --chart-2: oklch(83.5% 0.0437 71.24);
+  --chart-3: oklch(48.5% 0.0666 71.24);
+  --chart-4: oklch(67.4% 0.0782 71.24);
+  --chart-5: oklch(33.2% 0.0207 71.24);
+  --sidebar: oklch(33.2% 0.0207 71.24);
+  --sidebar-foreground: oklch(97.4% 0.0016 71.24);
+  --sidebar-primary: oklch(71.1% 0.0782 71.24);
+  --sidebar-primary-foreground: oklch(97.4% 0.0016 71.24);
+  --sidebar-accent: oklch(67.4% 0.0782 71.24);
+  --sidebar-accent-foreground: oklch(97.4% 0.0016 71.24);
+  --sidebar-border: oklch(48.5% 0.0666 71.24);
+  --sidebar-ring: oklch(71.7% 0.0782 71.24);
+}
