@@ -1,11 +1,6 @@
-import { ModeToggle } from "@/components/ModeToggle";
+import { Input } from "@/components/ui/input";
 import React from "react";
 
 export default function Home() {
-  return (
-    <div className="bg-background text-foreground">
-      <p>Corpo</p>
-      <ModeToggle />
-    </div>
-  );
+  return <div className="w-full h-full bg-background"></div>;
 }
